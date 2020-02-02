@@ -2,7 +2,7 @@ $blue:   #056ef0;
 $green: #146d23;
 $black: #222;
 $orange: #e2870f;
-$gray: #9b9797;
+$gray: #c9c1c1;
 $white: #fff;
 
 * {
@@ -16,6 +16,6 @@ html {
 
 body {
     background: $white;
-    color: $green;
+    color: $black;
     font-family: 'Lato', sans-serif;
 }

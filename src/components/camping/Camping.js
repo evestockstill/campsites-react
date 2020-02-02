@@ -9,8 +9,7 @@ class Camping extends Component {
     return (
       <article className={styles.camping}>
         <div className={styles.img_container}>
-          <img
-            width='200'
+          <img className={styles.campimage}
             src='https://images.pexels.com/photos/3415401/pexels-photo-3415401.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
             alt=''
           />
@@ -18,7 +17,7 @@ class Camping extends Component {
             <img src={Delete} alt='delete' />
           </span>
         </div>
-        <div className='camping_info'>
+        <div className={styles.camping_info}>
           <h3>state</h3>
           <h5>Place</h5>
           <h4>campsiteName</h4>

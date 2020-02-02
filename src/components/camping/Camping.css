@@ -1,1 +1,52 @@
 @import '../App.css';
+
+
+.camping {
+    background: $gray;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    .campimage {
+        height: 30rem;
+        width: 100%;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        display: block;
+    }
+    .img_container {
+        position: relative;
+    }
+    .xBtn {
+        position: absolute;
+        display: block;
+        top: 5%;
+        right: 5%;
+        cursor: pointer;
+        transition: all 0.4s linear;
+        opacity: 0;
+        &:hover {
+            opacity: 1;
+        }
+        
+    }
+    .camping_info {
+            padding: 1.2rem 0.3rem; 
+            h3 {
+                text-transform: uppercase;
+                color: $green;
+            }
+            h4 {
+                text-transform: capitalize;
+                color: $black;
+                margin: .3rem 0 0.7rem 0;
+            }
+            h5 {
+                text-transform: capitalize;
+                span {
+                   margin: 0.5rem;
+                   cursor: pointer
+                   ;
+                }
+            }
+        }
+    
+}
