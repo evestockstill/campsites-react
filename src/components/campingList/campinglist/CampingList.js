@@ -8,13 +8,20 @@ class CampingList extends Component {
   state = {
     camps: campingData
   };
+  removeCampsite = id => {
+    const { camps } = this.state;
+    const filterCamps = camps.filter(camp=> camp.id !== id);
+    this.setState({
+      camps:filterCamps
+    })
+  }
   render() {
     const { camps } = this.state;
-    console.log(camps);
+    
     return (
       <section className={styles.campinglist}>
         {camps.map(camp => {
-          return <Camping key={camp.id} camp={camp} />;
+          return <Camping key={camp.id} camp={camp} removeCampsite={this.removeCampsite} />;
         })}
       </section>
     );
