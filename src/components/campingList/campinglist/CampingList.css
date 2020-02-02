@@ -1,0 +1,23 @@
+.campinglist {
+    width: 70vw;
+    margin: 0 auto;
+    padding: 2.5rem 0;
+}
+@media screen and (min-width: 786px) {
+    .campinglist {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+    }
+}
+@media screen and (min-width: 992px) {
+    .campinglist {
+        width: 85vw;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (min-width: 1140px) {
+    .campinglist {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
