@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import styles from './Camping.css';
 import Delete from '../../img/delete.png';
+import Arrow from '../../img/arrow.png';
 import PropTypes from 'prop-types';
 
-class CampingList extends Component {
+class Camping extends Component {
   render() {
     return (
-      <article className={styles.tour}>
+      <article className={styles.camping}>
         <div className={styles.img_container}>
           <img
             width='200'
@@ -14,15 +15,26 @@ class CampingList extends Component {
             alt=''
           />
           <span className={styles.xBtn}>
-            <img src={Delete} alt="delete" />
-           
+            <img src={Delete} alt='delete' />
           </span>
+        </div>
+        <div className='camping_info'>
+          <h3>state</h3>
+          <h5>Place</h5>
+          <h4>campsiteName</h4>
+          <h5>
+            info{' '}
+            <span>
+              <img src={Arrow} />
+            </span>
+          </h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem animi velit sint perferendis consectetur magni aliquid, molestias recusandae? Aliquam labore accusantium alias excepturi temporibus repellat?</p>
         </div>
       </article>
     );
   }
 }
 
-CampingList.propTypes = {};
+Camping.propTypes = {};
 
-export default CampingList;
+export default Camping;

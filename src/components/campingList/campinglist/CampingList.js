@@ -7,7 +7,7 @@ class CampingList extends Component {
   render() {
     return (
       <div>
-        <section>
+        <section className={styles.campinglist}>
           <Camping />
         </section>
       </div>
