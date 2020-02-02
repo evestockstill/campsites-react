@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styles from './Nav.css';
-import logo from '../../img/campLogo.jpeg';
+import logo from '../../../public/img/campLogo.jpeg';
 // import PropTypes from 'prop-types';
 
 export default class Nav extends Component {

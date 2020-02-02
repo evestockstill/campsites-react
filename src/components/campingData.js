@@ -47,7 +47,7 @@ export const campingData = [
   {
     id: 6,
     state: 'Washington',
-    img: './src/img/rainier.jpeg',
+    img: './img/rainier.jpeg',
     place: 'Rainier National Forest',
     campsiteName: 'White River',
     info: 'White River\'s access to the surrounding environment is unbeatable, including the stunning and surrounding White River Valley. The Wonderland Trail wanders right through the campground, and other hiking trails, including the Glacier Basin Trail, beckon for a great day trip.'

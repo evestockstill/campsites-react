@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Camping from '../../camping/Camping';
 import styles from './CampingList.css';
-import { campingData } from '../../../campingData';
+import { campingData } from '../../campingData';
 import PropTypes from 'prop-types';
 
 class CampingList extends Component {
@@ -10,6 +10,7 @@ class CampingList extends Component {
   };
   render() {
     const { camps } = this.state;
+    console.log(camps);
     return (
       <section className={styles.campinglist}>
         {camps.map(camp => {
